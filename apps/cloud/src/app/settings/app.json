@@ -1,0 +1,7 @@
+{
+  "layout": {
+    "position": "nav-top"
+  },
+  "productName": "Default Product",
+  "defaultHomePage": "/netflix"
+}

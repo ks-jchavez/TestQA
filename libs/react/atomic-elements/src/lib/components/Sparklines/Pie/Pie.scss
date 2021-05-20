@@ -1,0 +1,25 @@
+.pie-container {
+  align-items: center;
+  color: var(--on-surface-color);
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  &--is-primary {
+    justify-content: center;
+  }
+
+  &__label {
+    color: var(--on-surface-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    &--is-primary {
+      font-size: var(--tx-5XL);
+      font-weight: normal;
+    }
+  }
+}

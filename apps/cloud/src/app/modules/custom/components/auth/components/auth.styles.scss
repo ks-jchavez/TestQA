@@ -1,0 +1,72 @@
+%authenticator {
+  .container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--pm-L);
+    background-position: left;
+    background-size: cover;
+
+    label.Mui-required {
+      span[class*='MuiInputLabel-'] {
+        display: none;
+      }
+    }
+  }
+
+  .wrap {
+    width: var(--wh-8XL);
+    background: var(--white);
+    border-radius: var(--pm-S);
+    overflow: hidden;
+    padding: var(--pm-4XL) var(--pm-6XL);
+    box-shadow: 0 var(--pm-L) var(--pm-L) 0 rgba(202, 184, 184, 0.2),
+      0 var(--pm-2XS) var(--pm-1XL) 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .pic {
+    display: flex;
+    justify-content: center;
+
+    & img {
+      max-width: 250px;
+      max-height: 250px;
+    }
+  }
+
+  .padding {
+    padding: var(--pm-M) 0px;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text {
+    font-size: var(--tx-M);
+    color: var(--login-color);
+  }
+
+  .link {
+    font-size: var(--tx-M);
+    color: var(--grey-0);
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+
+    &:focus {
+      outline: none !important;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: var(--login-button-background-color);
+    }
+  }
+
+  .input {
+    width: 100%;
+  }
+}

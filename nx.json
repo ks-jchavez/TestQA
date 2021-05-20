@@ -1,0 +1,35 @@
+{
+  "npmScope": "kleeen",
+  "implicitDependencies": {
+    "nx.json": "*",
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "workspace.json": "*",
+    "tsconfig.base.json": "*",
+    ".eslintrc.json": "*"
+  },
+  "projects": {
+    "api": { "tags": [] },
+    "auth": { "tags": [] },
+    "backend-utils": { "tags": [] },
+    "cloud": { "tags": [] },
+    "cloud-e2e": { "tags": [] },
+    "common-utils": { "tags": [] },
+    "environment": { "tags": [] },
+    "frontend-utils": { "tags": [] },
+    "i18n": { "tags": [] },
+    "react-atomic-elements": { "tags": [] },
+    "react-components": { "tags": [] },
+    "react-hooks": { "tags": [] },
+    "react-state-management": { "tags": [] },
+    "render-utils": { "tags": [] },
+    "styles": { "tags": [] },
+    "types": { "tags": [] }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
+    }
+  },
+  "affected": { "defaultBase": "develop" }
+}

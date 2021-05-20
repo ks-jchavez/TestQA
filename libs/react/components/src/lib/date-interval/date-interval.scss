@@ -1,0 +1,64 @@
+.date-interval-custom {
+  $backgroundColor: rgba(0,0,0,0.05);
+  $colorText: var(--secondary-color);
+  $sizeText: var(--size-size9);
+  $sizeTextFocus: var(--size-size10);
+  padding-bottom: var(--pm-S);
+
+  .date-interval-options {
+    background-color: $backgroundColor;
+    
+    .MuiTabs-indicator {
+      background-color: $colorText;
+    }
+
+    .full-width-button {
+      width: 100%;
+      min-height: var(--wh-M);
+
+      &.active-button{
+        background-color: var(--grey_light_3x);
+        
+        .label-date.label-date-active{
+          font-weight: 800;
+        }
+      }
+
+      .MuiButton-label {
+        display: block;
+  
+        .label-date{
+          font-size: $sizeText;
+          color: $colorText;
+          &.label-date-active {
+            font-size: $sizeTextFocus;
+          }
+        }
+  
+        .label-title {
+          font-size: $sizeText;
+          color: $colorText;
+        }
+      }  
+    }
+  }
+
+  .date-interval-detail {
+    padding-bottom: var(--pm-S);
+    
+    .MuiPickersBasePicker-container {
+      margin: 0 auto;
+    }
+  }  
+
+  .date-interval-step {
+    width: 100%;
+    text-align: center;
+    
+    button {
+      color: var(--on-secondary-color); 
+      box-shadow: none;
+      margin: 0 var(--pm-5XS);
+    }
+  }
+}

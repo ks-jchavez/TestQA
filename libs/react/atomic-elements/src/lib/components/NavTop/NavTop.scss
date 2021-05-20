@@ -1,0 +1,31 @@
+.nav-top {
+  .logo {
+    margin-right: auto;
+  }
+
+  .nav-top-menu {
+    width: 50%;
+  }
+
+  .menu-nav-button.MuiButton-root {
+    font-size: var(--tx-L);
+    text-transform: unset;
+    min-width: var(--wh-3XL);
+    max-width: var(--wh-9XL);
+  }
+
+  .title.MuiTypography-h6 {
+    width: 45%;
+    font-size: var(--tx-L);
+    padding: var(--pm-1XL);
+    text-transform: uppercase;
+  }
+
+  .toolbar {
+    svg {
+      height: var(--wh-S);
+      width: var(--wh-S);
+      margin: var(--pm-0) var(--pm-M);
+    }
+  }
+}

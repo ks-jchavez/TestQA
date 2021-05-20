@@ -1,0 +1,45 @@
+.container-arrow-point {
+  align-items: center;
+  display: flex;
+
+  > svg {
+    font-size: inherit;
+    margin-right: var(--pm-3XS);
+
+    &.arrow-up {
+      transform: rotate(-90deg);
+    }
+
+    &.arrow-down {
+      transform: rotate(90deg);
+    }
+
+    &.arrow-neutral {
+      display: none;
+    }
+  }
+
+  &.positiveIsGood {
+    > svg {
+      &.arrow-up {
+        color: var(--good-on);
+      }
+
+      &.arrow-down {
+        color: var(--bad-off);
+      }
+    }
+  }
+
+  &.negativeIsGood {
+    > svg {
+      &.arrow-up {
+        color: var(--bad-off);
+      }
+
+      &.arrow-down {
+        color: var(--good-on);
+      }
+    }
+  }
+}
