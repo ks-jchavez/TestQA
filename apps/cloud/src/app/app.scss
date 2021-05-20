@@ -1,0 +1,71 @@
+@import 'placeholders';
+@import 'mixins';
+
+.app {
+  height: var(--size-pageHeight);
+  overflow: hidden;
+  width: var(--size-pageWidth);
+
+  .generated-new {
+    @extend %fill-available-space;
+    display: flex;
+
+    > div {
+      @extend %fill-available-space;
+    }
+
+    &.nav-top {
+      flex-direction: column;
+
+      .layout {
+        height: calc(100% - var(--wh-M));
+      }
+    }
+
+    &.nav-left {
+      flex-direction: row;
+
+      .layout {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .container-nav-left {
+      height: 100%;
+      display: flex;
+    }
+
+    > footer {
+      background-color: rgb(128, 128, 128);
+      bottom: 0;
+      border-radius: 4px 0 0 0;
+      color: #000;
+      display: inline-block;
+      padding: var(--size-size4);
+      position: fixed;
+      right: 0;
+    }
+  }
+
+  .layout {
+    &.nav-top {
+      .browserArea,
+      .openFilterSection,
+      .openDetailsSection {
+        overflow: hidden;
+      }
+    }
+  }
+
+  @include subhead-dynamic;
+}
+
+// TODO this !important attribute must be fixed or refactor in further sprints
+* {
+  font-family: var(--fontFamily-default) !important;
+}
+
+.custom-noti-stack-container {
+  flex-direction: column-reverse;
+}

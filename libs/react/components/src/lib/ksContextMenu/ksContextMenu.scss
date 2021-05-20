@@ -1,0 +1,14 @@
+@import 'variables';
+
+.context-menu-list {
+  margin: var(--size-size4);
+  padding: var(--size-size4);
+  position: fixed;
+  z-index: $max-z-index;
+
+  li {
+    cursor: pointer;
+    margin: var(--size-size2);
+    padding: var(--size-size2);
+  }
+}

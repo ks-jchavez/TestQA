@@ -1,0 +1,13 @@
+.highcharts-column-series {
+  .highcharts-point {
+    transition: all 200ms ease-in;
+  }
+  &:hover {
+    .highcharts-point {
+      opacity: 0.6;
+    }
+    .highcharts-point-hover {
+      opacity: 1;
+    }
+  }
+}

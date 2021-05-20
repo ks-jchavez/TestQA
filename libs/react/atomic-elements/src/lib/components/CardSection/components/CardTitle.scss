@@ -1,0 +1,32 @@
+.card-widget .cardTitle {
+  align-items: center;
+  background: var(--card-content-bg-color-medium);
+  display: flex;
+  height: var(--wh-S);
+  width: 100%;
+  border: var(--card-header-border);
+  border-width: var(--card-header-border-width);
+
+  .title {
+    color: var(--h3-title-color);
+    font-size: var(--tx-M);
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: var(--tx-2XL);
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: var(--pm-L);
+    padding-right: var(--pm-L);
+    width: 100%;
+  }
+
+  .icon {
+    color: var(--secondary-color);
+    height: var(--wh-S);
+    margin-left: auto;
+    margin-right: var(--pm-S);
+    width: var(--wh-1XS);
+  }
+}

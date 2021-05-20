@@ -1,0 +1,65 @@
+.card-detail {
+  color: var(--on-surface-color);
+  width: 100%;
+
+  .container {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+
+    > .text-overflow-align {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+
+      > {
+        h2,
+        p {
+          &,
+          > div {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+        p {
+          text-align: left;
+        }
+
+        h2 {
+          margin: var(--pm-0) var(--pm-0) var(--pm-6XS);
+
+          > div {
+            width: 100%;
+            margin: 0 auto;
+            text-align: left;
+
+            > .arrow-point-center {
+              justify-content: center;
+            }
+          }
+        }
+
+        p {
+          margin: var(--pm-0);
+        }
+      }
+    }
+  }
+}
+
+.statistics-primary {
+  .card-detail {
+    .container {
+      > .text-overflow-align {
+        > p, > h2 {
+          text-align: center;
+          > div {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

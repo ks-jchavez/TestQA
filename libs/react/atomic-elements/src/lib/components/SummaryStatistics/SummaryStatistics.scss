@@ -1,0 +1,51 @@
+.summary-statistics {
+  --font-size-h2: var(--tx-5XL);
+  --font-size-p: var(--tx-L);
+  --card-size-1: 65%;
+  --card-size-2: calc(var(--font-size-h2) + var(--font-size-p) + var(--wh-3XS));
+  --hearder-size: 0px;
+  margin-bottom: var(--pm-0);
+  &.widget {
+    margin-left: calc(var(--pm-L) * -1);
+    width: calc(100% + 2 * var(--pm-L));
+  }
+  &.visualization {
+    width: 100%;
+  }
+  &.flavor-material {
+    --card-size-1: 60%;
+    --card-size-2: var(--font-size-h2);
+    --hearder-size: var(--wh-1XS);
+  }
+  > {
+    .MuiGrid-root {
+      align-items: center;
+      display: flex;
+      padding: var(--pm-0) var(--pm-S);
+      &.statistics-primary {
+        font-size: var(--tx-3XL);
+        h2 {
+          font-size: var(--font-size-h2);
+        }
+        p {
+          font-size: var(--font-size-p);
+        }
+        &.columns-size-1 {
+          height: calc(var(--card-size-1) + var(--hearder-size));
+          font-size: var(--tx-2XL);
+        }
+        &.columns-size-2 {
+          height: calc(var(--card-size-2) + var(--hearder-size));
+          font-size: var(--tx-1XL);
+        }
+      }
+      &.statistics-secondary {
+        background-color: var(--row-even);
+        font-size: var(--tx-M);
+        height: var(--wh-S);
+        position: relative;
+        top: calc(var(--pm-M) - var(--pm-4XS));
+      }
+    }
+  }
+}

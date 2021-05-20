@@ -1,0 +1,17 @@
+.sparklines-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .transformation-label {
+    color: var(--on-surface-color);
+    text-align: left;
+  }
+
+  &--is-primary {
+    .transformation-label {
+      text-align: center;
+    }
+  }
+}
